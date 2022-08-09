@@ -19,20 +19,18 @@ body {
   color: var(--brand-color);
 }
 .site-nav a:hover,
-.site-nav a:focus
-{
-    color: var(--brand-color);
-    cursor: pointer;
+.site-nav a:focus {
+  color: var(--brand-color);
+  cursor: pointer;
 }
-.header-email-phone{
-    color: var(--text-grey);
-    text-decoration: none;
+.header-email-phone {
+  color: var(--text-grey);
+  text-decoration: none;
 }
 /* remove link behaviour */
 .header-email-phone:hover,
-.header-email-phone:focus
-{
-    color: var(--brand-color);
+.header-email-phone:focus {
+  color: var(--brand-color);
 }
 .hero {
   background-color: var(--brand-background-dark);
@@ -73,7 +71,6 @@ body {
   color: rgba(255, 255, 255, 60%);
 }
 
-
 /* Styling
 «C1» There are no global element styles except for <body>.
 
@@ -107,4 +104,4 @@ body {
 
 «С16» All buttons are set to the cursor property with the pointer value.
 
-«С17» Styles do not repeat browser default values. For example, links do not need to have cursor: pointer, and paragraphs do not require font-style: normal or font-weight: 400. */ */
+«С17» Styles do not repeat browser default values. For example, links do not need to have cursor: pointer, and paragraphs do not require font-style: normal or font-weight: 400. */
