@@ -9,18 +9,18 @@
 
   <body>
     <!-- Header Section -->
-    <header class="page-header">
+    <header class="header">
       <nav>
-        <a href="./index.html" class="logo">WebStudio</a>
-        <ul class="site-nav">
-          <li><a href="./index.html">Studio</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+        <a href="./index.html" class="logo nodecor">WebStudio</a>
+        <ul class="site-nav nolist">
+          <li><a class="nodecor" href="./index.html">Studio</a></li>
+          <li><a class="nodecor" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="nodecor" href="">Contacts</a></li>
         </ul>
       </nav>
-      <ul class="header-email-phone">
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+380 961 11 11</a></li>
+      <ul class="header-email-phone nolist">
+        <li><a class="nodecor" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="nodecor" href="tel:+380961111111">+380 961 11 11</a></li>
       </ul>
     </header>
 
@@ -28,37 +28,37 @@
     <main>
       <!-- Hero section -->
       <section class="hero">
-        <h1>Effective solutions for your business</h1>
+        <h1 class="hero-title">Effective solutions for your business</h1>
         <button class="hero-button" type="button">Request our service</button>
       </section>
 
       <!-- Group 1 section -->
-      <section>
-        <h2 hidden>Company's advantages</h2>
-        <ul>
+      <section class="section">
+        <h2 class="section-title" hidden>Company's advantages</h2>
+        <ul class="advantages nolist">
           <li>
-            <h3>Attention to details</h3>
+            <h3 class="title">Attention to details</h3>
             <p>
               We go into all the details and processes of your business to develop a customized
               solution.
             </p>
           </li>
           <li>
-            <h3>Punctuality</h3>
+            <h3 class="title">Punctuality</h3>
             <p>
               With us, you can feel safe and secure. An important principle of the company: respect
               your time and respect the agreed deadlines.
             </p>
           </li>
           <li>
-            <h3>Planning</h3>
+            <h3 class="title">Planning</h3>
             <p>
               You will be able to observe and participate in every phase of solution development and
               implementatiotn.
             </p>
           </li>
           <li>
-            <h3>Modern technologies</h3>
+            <h3 class="title">Modern technologies</h3>
             <p>
               We use innovative tools to solve assigned tasks. It's time to simplify work processes.
             </p>
@@ -67,9 +67,9 @@
       </section>
 
       <!-- 'What we do' section -->
-      <section>
-        <h2>What we do</h2>
-        <ul>
+      <section class="section">
+        <h2 class="section-title">What we do</h2>
+        <ul class="wedo nolist">
           <li>
             <img
               src="./images/studio/what-we-do-1.jpg"
@@ -98,9 +98,9 @@
       </section>
 
       <!-- 'Our Team' section-->
-      <section class="our-team">
-        <h2>Our Team</h2>
-        <ul>
+      <section class="section">
+        <h2 class="section-title">Our Team</h2>
+        <ul class="team nolist">
           <li>
             <img
               class="team-img"
@@ -110,7 +110,7 @@
               height="260"
               lang="ru"
             />
-            <h3 lang="ru">Игорь Демьяненко</h3>
+            <h3 class="name" lang="ru">Игорь Демьяненко</h3>
             <p>Product Designer</p>
           </li>
           <li>
@@ -123,7 +123,7 @@
               height="260"
               lang="ru"
             />
-            <h3 lang="ru">Ольга Репина</h3>
+            <h3 class="name" lang="ru">Ольга Репина</h3>
             <p>Frontend Developer</p>
           </li>
           <li>
@@ -136,7 +136,7 @@
               height="260"
               lang="ru"
             />
-            <h3 lang="ru">Николай Тарасов</h3>
+            <h3 class="name" lang="ru">Николай Тарасов</h3>
             <p>Marketing</p>
           </li>
           <li>
@@ -149,7 +149,7 @@
               height="260"
               lang="ru"
             />
-            <h3 lang="ru">Михаил Ермаков</h3>
+            <h3 class="name" lang="ru">Михаил Ермаков</h3>
             <p>UI Designer</p>
           </li>
         </ul>
@@ -158,16 +158,20 @@
 
     <!-- Footer Section -->
     <footer class="footer">
-      <a class="logo" href="./index.html">WebStudio</a>
+      <a class="logo nodecor" href="./index.html">WebStudio</a>
       <address>
-        <ul>
+        <ul class="nolist">
           <li>
-            <a class="location" href="https://goo.gl/maps/E1iEUMU5giMTUFDc8" target="_blank"
+            <a class="location nodecor" href="https://goo.gl/maps/E1iEUMU5giMTUFDc8" target="_blank"
               >695 Park Ave, New York, NY 10065,<br />United States
             </a>
           </li>
-          <li><a class="footer-email-phone" href="mailto:info@example.com">info@example.com</a></li>
-          <li><a class="footer-email-phone" href="tel:+12127724150">+1 212-772-4150</a></li>
+          <li>
+            <a class="footer-email-phone nodecor" href="mailto:info@example.com"
+              >info@example.com</a
+            >
+          </li>
+          <li><a class="footer-email-phone nodecor" href="tel:+12127724150">+1 212-772-4150</a></li>
         </ul>
       </address>
     </footer>

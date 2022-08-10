@@ -1,77 +1,95 @@
 /* Variables */
 :root {
   --brand-color: #2196f3;
-  --brand-background-dark: #2f303a;
-  --brand-backgrounf-light: #f5f4fa;
-  --text-black: #212121;
-  --text-grey: #757575;
+  --bg-color-dark: #2f303a;
+  --bg-color-light: #f5f4fa;
+  --text-primary: #757575;
+  --text-secondary: #212121;
+  --accent-color: #ffffff;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--text-black);
+  background-color: #ffffff;
+  color: var(--text-primary);
 }
 
-.page-header {
-  background-color: white;
+/*Singletones*/
+.nolist {
+  list-style: none;
 }
+.nodecor {
+  text-decoration: none;
+}
+
+/* 
+Remake all classes into combined classes */
+
 .logo {
   color: var(--brand-color);
 }
+/* Site navigation */
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--brand-color);
   cursor: pointer;
 }
 .header-email-phone {
-  color: var(--text-grey);
-  text-decoration: none;
+  color: var(--text-secondary);
 }
 /* remove link behaviour */
 .header-email-phone:hover,
 .header-email-phone:focus {
   color: var(--brand-color);
 }
+
+/* Hero section */
 .hero {
-  background-color: var(--brand-background-dark);
-  color: white;
+  background-color: var(--bg-color-dark);
+}
+.hero-title {
+  color: #ffffff;
 }
 .hero-button {
   background-color: var(--brand-color);
-  color: white;
+  color: #ffffff;
   cursor: pointer;
-}
-.sort-button button {
-  background-color: var(--brand-backgrounf-light);
-  color: var(--text-black);
-  cursor: pointer;
-}
-.sort-button button:hover,
-.sort-button button:focus {
-  background-color: var(--brand-color);
-  color: white;
-}
-.our-team {
-  background-color: var(--brand-backgrounf-light);
 }
 
-.our-team h3 {
-  color: var(--text-black);
+.section-title {
+  color: var(--text-secondary);
 }
-.our-team p {
-  color: var(--text-grey);
+
+.advantages .title {
+  color: var(--text-secondary);
+}
+
+.team .name {
+  color: var(--text-secondary);
 }
 .footer {
-  background-color: var(--brand-background-dark);
+  background-color: var(--bg-color-dark);
 }
 .location {
-  color: white;
+  color: #ffffff;
 }
 .footer-email-phone {
-  color: rgba(255, 255, 255, 60%);
+  color: rgba(255, 255, 255, 0.6);
 }
 
-/* Styling
+/* Button */
+.button button {
+  background-color: var(--bg-color-light);
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+.button button:hover,
+.button button:focus,
+.button button:active {
+  background-color: var(--brand-color);
+  color: var(--accent-color);
+}
+/* Styling 
 «C1» There are no global element styles except for <body>.
 
 «C2» Class selectors are used for styling.
