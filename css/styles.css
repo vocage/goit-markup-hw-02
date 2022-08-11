@@ -6,43 +6,112 @@
   --text-primary: #757575;
   --text-secondary: #212121;
   --accent-color: #ffffff;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #ffffff;
   color: var(--text-primary);
+  letter-spacing: 0.03em;
 }
 
-/*Singletones*/
+/*Singletones and Patterns*/
 .nolist {
   list-style: none;
 }
 .nodecor {
   text-decoration: none;
 }
+/* Button */
+.button {
+  background-color: #000;
+  color: var(--accent-color);
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button.active {
+  background-color: var(--brand-color);
+  color: var(--accent-color);
+}
+
+.button.idle {
+  background-color: var(--bg-color-light);
+  color: var(--text-secondary);
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: var(--brand-color);
+  color: var(--accent-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 /* 
 Remake all classes into combined classes */
 
+/* HEADER */
 .logo {
   color: var(--brand-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
 }
 /* Site navigation */
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--brand-color);
   cursor: pointer;
 }
-.header-email-phone {
+.header-contacts {
   color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
 /* remove link behaviour */
-.header-email-phone:hover,
-.header-email-phone:focus {
+.header-contacts:hover,
+.header-contacts:focus {
   color: var(--brand-color);
 }
 
+.link {
+  color: var(--text-secondary);
+}
+
+.site-nav .link.current {
+  color: var(--brand-color);
+}
+/* HEADER end */
+
+/* STUDIO PAGE MAIN */
 /* Hero section */
 .hero {
   background-color: var(--bg-color-dark);
@@ -67,28 +136,53 @@ Remake all classes into combined classes */
 .team .name {
   color: var(--text-secondary);
 }
+
+/* STUDIO PAGE MAIN end*/
+
+/* PORTFOLIO PAGE */
+.items-title {
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+}
+.items-filter {
+  color: var(--text-primary);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 188% */
+  letter-spacing: 0.03em;
+}
+/* PORTFOLIO PAGE end */
+
+/* Footer */
+
 .footer {
   background-color: var(--bg-color-dark);
+  font-style: normal;
+}
+.address {
+  font-style: normal;
 }
 .location {
-  color: #ffffff;
+  color: var(--accent-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
-.footer-email-phone {
-  color: rgba(255, 255, 255, 0.6);
+.footer-contacts {
+  color: var(--footer-contacts-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+  letter-spacing: 0.03em;
 }
 
-/* Button */
-.button button {
-  background-color: var(--bg-color-light);
-  color: var(--text-secondary);
-  cursor: pointer;
-}
-.button button:hover,
-.button button:focus,
-.button button:active {
-  background-color: var(--brand-color);
-  color: var(--accent-color);
-}
 /* Styling 
 «C1» There are no global element styles except for <body>.
 
