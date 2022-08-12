@@ -10,8 +10,8 @@
 }
 
 body {
+  background-color: var(--accent-color);
   font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
   color: var(--text-primary);
   letter-spacing: 0.03em;
 }
@@ -23,17 +23,29 @@ body {
 .nodecor {
   text-decoration: none;
 }
-/* Button */
+
+/* .visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+} */
+
+/* Buttons */
 .button {
-  background-color: #000;
-  color: var(--accent-color);
   font-family: inherit;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.03em;
+  letter-spacing: inherit;
 }
 
 .button.active {
@@ -46,6 +58,17 @@ body {
   color: var(--text-secondary);
 }
 
+.button.hero {
+  background-color: var(--brand-color);
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
 .button:hover,
 .button:focus,
 .button:active {
@@ -53,50 +76,23 @@ body {
   color: var(--accent-color);
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-/* 
-Remake all classes into combined classes */
-
 /* HEADER */
 .logo {
   color: var(--brand-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.2;
 }
 /* Site navigation */
 .site-nav {
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .site-nav a:hover,
-.site-nav a:focus {
-  color: var(--brand-color);
-  cursor: pointer;
-}
-.header-contacts {
-  color: var(--text-secondary);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-/* remove link behaviour */
+.site-nav a:focus,
 .header-contacts:hover,
 .header-contacts:focus {
   color: var(--brand-color);
@@ -105,36 +101,83 @@ Remake all classes into combined classes */
 .link {
   color: var(--text-secondary);
 }
-
 .site-nav .link.current {
   color: var(--brand-color);
 }
+
+/* Header Contacts */
+.header-contacts {
+  color: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
 /* HEADER end */
 
 /* STUDIO PAGE MAIN */
+
 /* Hero section */
 .hero {
   background-color: var(--bg-color-dark);
 }
 .hero-title {
-  color: #ffffff;
-}
-.hero-button {
-  background-color: var(--brand-color);
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.section-title {
-  color: var(--text-secondary);
+  color: var(--accent-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-.advantages .title {
+/* Advantages section */
+.advantages-features {
   color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
-.team .name {
+.advantages-text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* We do section */
+.wedo-title {
   color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+/* Team section */
+.team {
+  background-color: var(--bg-color-light);
+}
+.team-title {
+  color: var(--text-secondary);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.team-name {
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.team-role {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
 }
 
 /* STUDIO PAGE MAIN end*/
@@ -144,17 +187,13 @@ Remake all classes into combined classes */
   color: var(--text-secondary);
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
-  /* identical to box height, or 200% */
+  line-height: 2;
   letter-spacing: 0.06em;
 }
 .items-filter {
   color: var(--text-primary);
-  font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
-  /* identical to box height, or 188% */
-  letter-spacing: 0.03em;
+  line-height: 1.9;
 }
 /* PORTFOLIO PAGE end */
 
@@ -164,56 +203,23 @@ Remake all classes into combined classes */
   background-color: var(--bg-color-dark);
   font-style: normal;
 }
-.address {
-  font-style: normal;
-}
-.location {
+
+.footer-location {
   color: var(--accent-color);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.7;
 }
 .footer-contacts {
   color: var(--footer-contacts-color);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  /* or 171% */
-  letter-spacing: 0.03em;
+  font-style: normal;
+  line-height: 1.7;
 }
 
-/* Styling 
-«C1» There are no global element styles except for <body>.
-
-«C2» Class selectors are used for styling.
-
-«C3» Styles have no !Important.
-
-«C4» Interactive elements (buttons and links), when hovering over or focusing with the keyboard, have an active state specified in the layout (color change).
-
-«С5» The text of contacts in the header and footer changes color when hovering over or focusing with the keyboard.
-
-«C6» CSS variables are used to store the palette of layout colors (text, background, highlighting).
-
-«С7» The <body> element has the font-family property with the Roboto font as default for the layout.
-
-«C8» There are alternative font variations and family type (sans serif) at the end of font-family for the <body> element.
-
-«C9» The Roboto font family is explicitly set only for the <body> element, while the rest of the elements inherit it.
-
-«С10» For the <body> element, the color property is set to the default text color of the layout. The rest of the text inherits or overrides this value.
-
-«С11» The font size (font-size property) of all text elements exactly matches the values from the layout.
-
-«C12» The line height (line-height property) of all text elements exactly matches the values from the layout, and it is set as a multiplier, not in px.
-
-«С13» The color (color property) of all text elements exactly matches the values from the layout.
-
-«С14» The font weight (font-weight property) of all text elements exactly matches the values from the layout.
-
-«С15» The font weight (font-weight property) is explicitly specified only if the value in the layout differs from the standard for this element in the browser.
-
-«С16» All buttons are set to the cursor property with the pointer value.
-
-«С17» Styles do not repeat browser default values. For example, links do not need to have cursor: pointer, and paragraphs do not require font-style: normal or font-weight: 400. */
+.footer-location:hover,
+.footer-location:focus,
+.footer-contacts:hover,
+.footer-contacts:focus {
+  color: var(--brand-color);
+}
