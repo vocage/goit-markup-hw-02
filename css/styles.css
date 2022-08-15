@@ -7,6 +7,7 @@
   --text-secondary: #212121;
   --accent-color: #ffffff;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
+  --logo-header-color: #000000;
 }
 
 body {
@@ -87,6 +88,14 @@ body {
 
   color: var(--brand-color);
 }
+.logo-header {
+  color: var(--logo-header-color);
+}
+
+.logo-footer {
+  color: var(--accent-color);
+}
+
 /* Site navigation */
 .site-nav {
   font-weight: 500;
